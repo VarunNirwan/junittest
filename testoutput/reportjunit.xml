@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.429">
+<testcase classname="validate login api and check accesstoken using the accesstoken getallusers and fetch one user and delete" name="validate login and fetch the accesstoken" time="13.844">
+<system-out><![CDATA[Given Login API along with payload..........................................passed
+When Execute login with resource "/user/login" and provide me accesstoken...passed
+Then executed successfully with status code 200.............................passed
+And verify Login message....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

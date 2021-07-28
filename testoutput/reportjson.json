@@ -1,0 +1,89 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-30T07:05:27.455Z",
+        "line": 6,
+        "name": "validate login and fetch the accesstoken",
+        "description": "",
+        "id": "validate-login-api-and-check-accesstoken-using-the-accesstoken-getallusers-and-fetch-one-user-and-delete;validate-login-and-fetch-the-accesstoken",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Login API along with payload",
+            "match": {
+              "location": "Stepdefinition.definition.login_api_along_with_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11704000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Execute login with resource \"/user/login\" and provide me accesstoken",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/user/login\"",
+                  "offset": 28
+                }
+              ],
+              "location": "Stepdefinition.definition.execute_login_with_resource_and_provide_me_accesstoken(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "executed successfully with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                }
+              ],
+              "location": "Stepdefinition.definition.executed_successfully_with_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1722000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify Login message",
+            "match": {
+              "location": "Stepdefinition.definition.verify_login_message()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "validate login api and check accesstoken using the accesstoken getallusers and fetch one user and delete",
+    "description": "",
+    "id": "validate-login-api-and-check-accesstoken-using-the-accesstoken-getallusers-and-fetch-one-user-and-delete",
+    "keyword": "Feature",
+    "uri": "file:resource/Login/Login.feature",
+    "tags": []
+  }
+]
