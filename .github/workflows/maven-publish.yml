@@ -48,3 +48,11 @@ jobs:
       with:
         name: results
         path: ./target/surefire-reports/src.test.resources.Testcases.json  
+            # Upload artifacts for code covergae result
+            
+    - name: Upload artifact for html cucumber reports
+      uses: actions/upload-artifact@v2
+      with:
+        name: results
+        path: ./target/cucumber-html-reports  
+        
