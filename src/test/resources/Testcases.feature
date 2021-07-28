@@ -60,28 +60,6 @@ And header Authorization = "Bearer " + [token]
 When method POST
 Then status 415
 
-Scenario: Test cases_Employee_Negative Testcase_Unauthorization Error
-Given url 'https://azureeventhubsproducer.azurewebsites.net/api/sender'
-And request
-"""
-<?xml version="1.0" encoding="UTF-8"?>
-                                 <Employees>
-                                    <EmpDetails>
-                                        <Address>Bangalore</Address>
-                                        <Age>30</Age>
-                                    </EmpDetails>
-                                    <EmpName>
-                                        <FirstName>Kumar Debasis</FirstName>
-                                        <LastName>Barik</LastName>
-                                    </EmpName>
-                                 </Employees>
-
-"""
-When method POST
-Then status 401
-
-
-
 Scenario: Test cases_Employee_Negative test case_Request without body
 Given url 'https://azureeventhubsproducer.azurewebsites.net/api/sender'
 And header Authorization = "Bearer " + [token]
