@@ -89,6 +89,13 @@ And header Authorization = "Bearer " + [token]
 When method POST
 Then status 415
 
+Scenario: Test cases_Employee_Negative test case_Request without body(Will Fail)
+Given url 'https://azureeventhubsproducer.azurewebsites.net/api/sender'
+And header Authorization = "Bearer " + [token]
+* request ''
+When method POST
+Then status 200
+
 
 
 
